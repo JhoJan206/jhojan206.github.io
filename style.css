@@ -21,7 +21,13 @@ body{
 .social img {
   transition: transform 0.1s;
 }
-.social:hover img {
+.social_twitter img:hover{
+  transform: scale(1.1);
+}
+.social_instagram img:hover{
+  transform: scale(1.1);
+}
+.social_facebook img:hover{
   transform: scale(1.1);
 }
 .contacto img{
