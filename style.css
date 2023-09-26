@@ -1,6 +1,6 @@
 :root{
   --text: #dae0f6;
-  --background: #000000;
+  --background: #000427;
   --primary: #fac400;
   --secondary: #0c1431;
   --accent: #ceae3b;
@@ -11,9 +11,8 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #d4d4d4;
-  margin: 50px;
-  margin-top: 120px;
+  background-color: var(--background);
+  margin: 10px;
 }
 .card img{
   height: 380px;
@@ -23,33 +22,15 @@ body{
   transition: transform 0.1s;
 }
 .social:hover img {
-  transform: scale(1.9);
+  transform: scale(1.1);
 }
 .contacto img{
   max-width: 100px;
 }
-.boton {
-  background-color: var(--primary);
-  border: 1px solid rgb(0, 0, 5);
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.boton:hover {
-  transform: scale(1.1);
-}
 .card {
-  width: 50%;
-  max-width: 300px;
-  height: 90%;
-  max-height: 500px;
-  margin: 0 auto;
-  background-color: #fff;
+  max-width: 320px;
+  min-height: 400px;
+  background-color: var(--primary);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -64,9 +45,9 @@ body{
   flex-direction: column;
 }
 header {
-  width: 400px;
+  margin: 10px;
+  min-width: 340px;
   min-height: 580px;
-  margin-top: -100px;
   background: #ffcc00;
   padding: 15px;
   border: 10px solid #0074bd;
@@ -103,6 +84,7 @@ header {
   z-index: 1;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 200ms ease-in-out;
+  text-decoration: none;
 }
 #enviar:after {
   content: '';
@@ -127,13 +109,4 @@ header {
 }
 #enviar:active:after {
   background-color: #0f55aa;
-}
-.contacto{
-  display: flex;
-  height: 500px;
-  width: 500px;
-  padding: 10px;
-  background-color: #0074bd;
-  border: solid #000000;
-  border-radius: 8px;
 }
