@@ -1,0 +1,42 @@
+:root{
+  --text: #dae0f6;
+  --background: #000427;
+  --primary: #fac400;
+  --secondary: #0c1431;
+  --accent: #ceae3b;
+}
+.escena {
+  max-width: 340px;
+  min-width: 200px;
+  height: 540px;
+  perspective: 600px;
+  margin: 0 auto 48px;
+}
+#tarjeta {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.7s ease-in-out;
+  transform-style: preserve-3d;
+}  
+#tarjeta div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 5px;
+} 
+.frontal {
+  background: #0074bd;
+  border: solid 15px var(--primary);
+}  
+.trasera {
+  background: #0074bd;
+  transform: rotateY(180deg);
+  border: solid 15px var(--primary);
+} 

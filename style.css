@@ -45,16 +45,11 @@ body{
 .card img{
   align-items: center;
 }
-.container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 header {
   margin: 10px;
   max-width: 400px;
   min-width: 340px;
-  min-height: 580px;
+  min-height: 560px;
   background: #ffcc00;
   padding: 15px;
   border: 10px solid #0074bd;
@@ -119,4 +114,53 @@ ul{
 }
 #enviar:active:after {
   background-color: #0f55aa;
+}
+.proyectos{
+  color: aliceblue;
+}
+.habilidades{
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 480px;
+  width: 400px;
+  padding: 50px;
+  background-color: #0074bd;
+  border: solid #000000;
+  border-radius: 8px;
+}
+.contacto{
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 480px;
+  width: 400px;
+  padding: 50px;
+  background-color: #0074bd;
+  border: solid #000000;
+  border-radius: 8px;
+}
+footer{
+  margin-top: 30px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
