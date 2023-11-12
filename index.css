@@ -35,6 +35,7 @@ label {
     -webkit-transition: all 600ms;
     transition: all 600ms;
     z-index: 20;
+    user-select: none;
 }
 .card div {
     position: absolute;
