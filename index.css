@@ -5,38 +5,68 @@
   --secondary: #0c1431;
   --accent: #ceae3b;
 }
-.escena {
-  max-width: 340px;
-  min-width: 200px;
-  height: 540px;
-  perspective: 600px;
-  margin: 0 auto 48px;
+body {
+    background: #F17563;
+    font-family: Open Sans;
+    font-size: 10px;
+  	color: #222;
 }
-#tarjeta {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  position: relative;
-  transition: transform 0.7s ease-in-out;
-  transform-style: preserve-3d;
-}  
-#tarjeta div {
-  display: block;
-  height: 100%;
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  position: absolute;
-  backface-visibility: hidden;
-  border-radius: 5px;
-} 
-.frontal {
-  background: #0074bd;
-  border: solid 15px var(--primary);
-}  
-.trasera {
-  background: #0074bd;
-  transform: rotateY(180deg);
-  border: solid 15px var(--primary);
-} 
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 320px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+.card div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    text-align: center;
+    line-height: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+.card .back {
+    background: #222;
+    color: #FFF;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+label:hover .card {
+    -webkit-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+input {
+    display: none;
+}
+:checked + .card {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+label:hover :checked + .card {
+    transform: rotateY(160deg);
+    -webkit-transform: rotateY(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
