@@ -1,31 +1,28 @@
-:root {
+:root{
     --text: #dae0f6;
     --background: #42b6fe;
     --background_card: #ffffff;
     --blue: #0046dd;
     --yelow: #f6d51c;
     --naranja: #f9903a;
-  }
-  
-  body {
+}
+body{
     background: var(--background);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-  }
-  
-  label {
+} 
+label{
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     display: block;
     width: 320px;
     height: 500px;
     cursor: pointer;
-  }
-  
-  .card {
+} 
+.card{
     border: solid 18px var(--yelow);
     border-radius: 8px;
     position: relative;
@@ -37,9 +34,8 @@
     transition: all 600ms;
     z-index: 20;
     user-select: none;
-  }
-  
-  .card div {
+}
+.card div{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -49,42 +45,35 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 2px;
-  }
-  
-  .card .back {
+} 
+.card .back{
     background: var(--background_card);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-  }
-  
-  label:hover .card {
+}
+  label:hover .card{
     -webkit-transform: rotateY(10deg);
     transform: rotateY(10deg);
     box-shadow: 0 20px 20px rgba(50, 50, 50, 0.537);
-  }
-  
-  input {
+}
+  input{
     display: none;
-  }
-  
-  :checked + .card {
+}
+  :checked + .card{
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
-  }
-  
-  label:hover :checked + .card {
+} 
+  label:hover :checked + .card{
     transform: rotateY(160deg);
     -webkit-transform: rotateY(160deg);
     box-shadow: 0 20px 20px rgba(50, 50, 50, 0.537);
-  }
-  
-  .back img {
+} 
+  .back img{
     height: 50px;
-  }
-  
-  .back img:hover {
+}
+  .back img:hover{
     transform: scale(1.1);
-  }
+}
   .front img{
-    height: 280px;
+    height: 2px;
 }
