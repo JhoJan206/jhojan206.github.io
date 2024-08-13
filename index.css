@@ -1,11 +1,6 @@
 :root{
     --text: #dae0f6;
-    --background: #42b6fe;
-    --background_card: #ffffff;
-    --blue: #0046dd;
-    --yelow: #f6d51c;
-    --naranja: #f9903a;
 }
 body{
-  
+    margin: 0;
 }
