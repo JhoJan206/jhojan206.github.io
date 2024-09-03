@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <title>JhoJan | Developer</title>
 
     <!-- OPEN GRAPH (al compartir) -->
@@ -16,41 +16,71 @@
 </head>
 <body>
 
-    <section class="inicio">
-        <h1>JhoJan Jacome</h1>
-        <p>Estudiante de <strong>ingenieria de sofeware</strong> y un apacionado a las nuevas tecnologias</p>
-    </section>
-    <section class="experiencia">
-        <h1>Experiencia</h1>
-        <ul>
-            <li>Explorando los movimientos de la fisica - 2023</li>
-            <li>Web de la fundacion Huellas lunares - 2024</li>
-        </ul>
-    </section>
-    <section class="tecnologias">
-        <h1>Tecnologias</h1>
-    </section>
-    <section class="contacto">
-        <h1>Contacto</h1>
-        <p>enviame un <em>mail</em> a traves de jacomejhojan2006@gmail.com mediante la sigueinte barra de taxto</p>
-        <input type="text" placeholder="enviame un mail">
-        <button>Enviar</button>
-        <a href="https://www.instagram.com/jhojan_jm/" class="social">
-            <img src="" alt="Perfil de Instagram" />
-        </a>
-        <a href="https://www.linkedin.com/in/jhojan-david-jacome-montejo-690899267/" class="social">
-            <img src="" alt="Perfil de Linkedin" />
-        </a>
-        <a href="https://wa.me/3026089219" class="social">
-            <img src="" alt="Contacto Whattsapp" />
-        </a>
-    </section>
+    <main>
+
+        <section class="inicio">
+            <h1>JhoJan Jacome</h1>
+            <p>Estudiante de <strong>ingenieria de software</strong> y un apacionado a las nuevas tecnologias</p>
+            <a download href="hola.pdf">cv</a>
+        </section>
+        <section class="experiencia">
+            <h1>Experiencia</h1>
+            <ul>
+                <li>Explorando los movimientos de la fisica - 2023</li>
+                <li>Web de la fundacion Huellas lunares - 2024</li>
+            </ul>
+        </section>
+        <section class="tecnologias">
+            <h1>Tecnologias</h1>
+            <ol type="i">
+                <li>HTML</li>
+            </ol>
+            <details>
+                <summary>Que otras habilidades tengo?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis dignissimos nihil, totam voluptatibus obcaecati pariatur suscipit fugit, praesentium expedita quos quisquam cum dicta iste, ea earum consequatur dolorem temporibus?</p>
+            </details>
+        </section>
+        <section class="contacto">
+
+            <h1>Contacto</h1>
+            <p>enviame un <em>mail</em> a traves de jacomejhojan2006@gmail.com mediante la sigueinte barra de taxto</p>
+            <input type="text" placeholder="enviame un mail">
+            <button>Enviar</button>
+
+            <form action="port" action="/">
+                <fieldset>
+                    <legend>motivo</legend>
+                    <label for="para">Razon del comtacto</label>
+                    <select name="para" id="para"> 
+                        <option value="1">Trabajo</option>
+                        <option value="2">Proyecto</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Enviame un mail</legend>
+                    <label for="correo">correo</label>
+                    <input type="text" name="correo" id="correo" placeholder="dime" required>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jhojan_jm/" class="social">
+                <img loading="lazy" src="" alt="Perfil de Instagram" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jhojan-david-jacome-montejo-690899267/" class="social">
+                <img loading="lazy" src="" alt="Perfil de Linkedin" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://wa.me/3026089219" class="social">
+                <img loading="lazy" src="" alt="Contacto Whattsapp" />
+            </a>
+        </section>
+    </main>
 
     <footer>
         <h3>JhoJan 2024</h3>
     </footer>
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
