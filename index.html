@@ -10,19 +10,22 @@
     <meta property="og:title" content="JhoJan | Developer">
 
     <meta name="robots" content="index, follow">
-    <meta name="description" content="porfolio de jhojan, desarrollador de software y entusiatas de la tecnologia">
+    <meta name="description" content="porfolio de jhojan, desarrollador de software y entusiastas de las nuevas tecnologias">
     
     <link rel="icon" type="image/jpg" href="">
 </head>
 <body>
+
+    <header>Jhojan DEV</header>
 
     <main>
 
         <section class="inicio">
             <h1>JhoJan Jacome</h1>
             <p>Estudiante de <strong>ingenieria de software</strong> y un apacionado a las nuevas tecnologias</p>
-            <a download href="hola.pdf">cv</a>
+            <a download href="hola.pdf">Descargar CV</a>
         </section>
+
         <section class="experiencia">
             <h1>Experiencia</h1>
             <ul>
@@ -30,36 +33,38 @@
                 <li>Web de la fundacion Huellas lunares - 2024</li>
             </ul>
         </section>
+
         <section class="tecnologias">
             <h1>Tecnologias</h1>
-            <ol type="i">
+            <ul>
                 <li>HTML</li>
-            </ol>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+            </ul>
             <details>
                 <summary>Que otras habilidades tengo?</summary>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis dignissimos nihil, totam voluptatibus obcaecati pariatur suscipit fugit, praesentium expedita quos quisquam cum dicta iste, ea earum consequatur dolorem temporibus?</p>
             </details>
         </section>
-        <section class="contacto">
 
+        <section class="contacto">
             <h1>Contacto</h1>
-            <p>enviame un <em>mail</em> a traves de jacomejhojan2006@gmail.com mediante la sigueinte barra de taxto</p>
-            <input type="text" placeholder="enviame un mail">
-            <button>Enviar</button>
 
             <form action="port" action="/">
                 <fieldset>
-                    <legend>motivo</legend>
-                    <label for="para">Razon del comtacto</label>
-                    <select name="para" id="para"> 
-                        <option value="1">Trabajo</option>
-                        <option value="2">Proyecto</option>
-                    </select>
-                </fieldset>
-                <fieldset>
                     <legend>Enviame un mail</legend>
-                    <label for="correo">correo</label>
-                    <input type="text" name="correo" id="correo" placeholder="dime" required>
+                    <div>
+                        <label for="para">Razon del comtacto</label>
+                        <select name="para" id="para"> 
+                            <option value="1">Trabajo</option>
+                            <option value="2">Proyecto</option>
+                        </select> 
+                    </div>
+                    <div>
+                        <label for="correo">correo</label>
+                        <input type="text" name="correo" id="correo" placeholder="dime" required>
+                    </div>
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
@@ -74,13 +79,15 @@
                 <img loading="lazy" src="" alt="Contacto Whattsapp" />
             </a>
         </section>
+
+        <section class="box"></section>
     </main>
 
     <footer>
         <h3>JhoJan 2024</h3>
     </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
