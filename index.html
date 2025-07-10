@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>JhoJan | Developer</title>
 
-    <!-- OPEN GRAPH (al compartir) -->
+    <meta name="description" content="Portafolio de Jhojan, desarrollador de software y entusiasta de las nuevas tecnologías.">
+    <meta name="robots" content="index, follow">
     <meta property="og:title" content="JhoJan | Developer">
 
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="porfolio de jhojan, desarrollador de software y entusiastas de las nuevas tecnologias">
-    
-    <link rel="icon" type="image/jpg" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
 </head>
 <body>
 
-    <header>Jhojan DEV</header>
+    <header>
+        <h1>Jhojan DEV</h1>
+    </header>
 
     <main>
-
         <section class="inicio">
-            <h1>JhoJan Jacome</h1>
-            <p>Estudiante de <strong>ingenieria de software</strong> y un apacionado a las nuevas tecnologias</p>
-            <a download href="hola.pdf">Descargar CV</a>
+            <h2>JhoJan Jacome</h2>
+            <p>Naci el 02 de noviembre de 2006, soy Estudiante de <strong>Ingeniería de Software</strong> en la Universidad De Santander y un apasionado por la tecnología, programo desde el año 2023...</p>
+            <a class="boton" download href="assets/docs/cv.pdf">📄 Descargar CV</a>
         </section>
 
         <section class="experiencia">
-            <h1>Experiencia</h1>
+            <h2>Experiencia</h2>
             <ul>
-                <li>Explorando los movimientos de la fisica - 2023</li>
-                <li>Web de la fundacion Huellas lunares - 2024</li>
+                <li>Explorando los movimientos de la física - 2023</li>
+                <li>Web de la Fundación Huellas Lunares - 2024</li>
             </ul>
         </section>
 
         <section class="tecnologias">
-            <h1>Tecnologias</h1>
+            <h2>Tecnologías</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -43,51 +42,53 @@
                 <li>GitHub</li>
             </ul>
             <details>
-                <summary>Que otras habilidades tengo?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis dignissimos nihil, totam voluptatibus obcaecati pariatur suscipit fugit, praesentium expedita quos quisquam cum dicta iste, ea earum consequatur dolorem temporibus?</p>
+                <summary>¿Qué otras habilidades tengo?</summary>
+                <p>También tengo habilidades blandas como el trabajo en equipo, pensamiento crítico y una gran disposición para aprender nuevas tecnologías.</p>
             </details>
         </section>
 
         <section class="contacto">
-            <h1>Contacto</h1>
-
-            <form action="port" action="/">
+            <h2>Contacto</h2>
+            <form action="/" method="POST">
                 <fieldset>
-                    <legend>Enviame un mail</legend>
+                    <legend>Envíame un mail</legend>
                     <div>
-                        <label for="para">Razon del comtacto</label>
-                        <select name="para" id="para"> 
+                        <label for="para">Razón del contacto</label>
+                        <select name="para" id="para">
                             <option value="1">Trabajo</option>
                             <option value="2">Proyecto</option>
-                        </select> 
+                        </select>
                     </div>
                     <div>
-                        <label for="correo">correo</label>
-                        <input type="text" name="correo" id="correo" placeholder="dime" required>
+                        <label for="correo">Asunto</label>
+                        <input type="text" name="asunto" id="asunto" placeholder="Detalles" required>
                     </div>
+                    <div>
+                        <label for="correo">Correo</label>
+                        <input type="email" name="correo" id="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <button type="submit">Enviar</button>
                 </fieldset>
-                <button type="submit">Enviar</button>
             </form>
-            
-            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jhojan_jm/" class="social">
-                <img loading="lazy" src="" alt="Perfil de Instagram" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jhojan-david-jacome-montejo-690899267/" class="social">
-                <img loading="lazy" src="" alt="Perfil de Linkedin" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://wa.me/3026089219" class="social">
-                <img loading="lazy" src="" alt="Contacto Whattsapp" />
-            </a>
-        </section>
 
-        <section class="box"></section>
+            <div class="redes">
+                <a target="_blank" href="https://www.instagram.com/jhojan_jm/" class="social">
+                    <img src="assets/img/instagram.png" alt="Instagram" />
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/jhojan-david-jacome-montejo-690899267/" class="social">
+                    <img src="assets/img/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a target="_blank" href="https://wa.me/3026089219" class="social">
+                    <img src="assets/img/whatsapp.png" alt="WhatsApp" />
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <h3>JhoJan 2024</h3>
+        <p>&copy; JhoJan 2024</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
